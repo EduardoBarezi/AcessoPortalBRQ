@@ -27,6 +27,9 @@ public class AcessoPortalTest {
 
             // Clicar no campo de imput Usuario
             navegador.findElement(By.id("txtUsuario")).click();
+            
+         // Clicar no campo de imput Usuario
+            navegador.findElement(By.id("txtUsuario")).click();
 
             // Digitar no campo de Usuario "eduardobarezi"
             navegador.findElement(By.id("txtUsuario")).sendKeys("eduardobarezi");
