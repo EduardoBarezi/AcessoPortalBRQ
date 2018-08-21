@@ -20,17 +20,13 @@ public class AcessoPortalTest {
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\eduardobarezi\\IdeaProjects\\chromedriver.exe");
             WebDriver navegador = new ChromeDriver();
             navegador.manage().window().maximize();
-            navegador.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+            
             // Navegando para a pagina do Portal BRQ
             navegador.get("https://portal.brq.com/");
 
             // Clicar no campo de imput Usuario
-            navegador.findElement(By.id("txtUsuario")).click();
+            //navegador.findElement(By.id("txtUsuario")).click();
             
-         // Clicar no campo de imput Usuario
-            navegador.findElement(By.id("txtUsuario")).click();
-
             // Digitar no campo de Usuario "eduardobarezi"
             navegador.findElement(By.id("txtUsuario")).sendKeys("eduardobarezi");
 
